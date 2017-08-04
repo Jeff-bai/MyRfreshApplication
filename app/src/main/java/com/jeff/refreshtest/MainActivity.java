@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements OnRefreshLoadmore
         refresh.setEnableRefresh(true);
         refresh.setEnableLoadmore(false);
         refresh.setRefreshHeader(new MyHeader(this));
-//        refresh.setRefreshHeader(new hea)
         refresh.setRefreshFooter(new ClassicsFooter(this));
         recycler = (RecyclerView) findViewById(R.id.recycler);
         recycler.setLayoutManager(new LinearLayoutManager(this));
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements OnRefreshLoadmore
                 adapter.setRefreshDate(list);
                 refresh.finishRefresh();
             }
-        },2000);
+        },20000);
 
     }
 }
